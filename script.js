@@ -1,5 +1,6 @@
 const divContainer = document.querySelector('.gridContainer');
-const grid = document.createElement('div-grid');
+const grid = document.createElement('div');
+grid.classList.add('grid')
 
 function createGrids(){
     for(let i = 0; i < 16; i++){

@@ -1,21 +1,23 @@
-*{
-    box-sizing: border-box;
-}
 .gridContainer{
     display: flex;
+    position: relative;
+    margin: auto;
+    height: 960px;
+    width: 960px;
 }
 
 .grid{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    margin: 0;
+    padding: 0;
 }
 
 .cell{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
     border: 1px solid black;
-    width: 25px;
-    height: 25px;
+    width: 50px;
+    height: 50px;
 }

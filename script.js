@@ -15,4 +15,12 @@ function createGrids(rows, cols){
 }
 createGrids(16, 16)
 
+//Add button function from the created HTML tag that runs code so it changes the grid size
+//maximum of 100 for performance
+
+const button = document.querySelector('.pButton')
+button.onclick = function() {
+    prompt('Write the grid size you want')
+}
+
 divContainer.appendChild(grid);

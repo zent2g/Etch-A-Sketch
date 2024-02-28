@@ -7,6 +7,10 @@ function createGrids(rows, cols){
             const cell = document.createElement('div');
             cell.classList.add('cell');
             grid.appendChild(cell)
+
+            cell.addEventListener('mouseover', () => {
+                cell.style.backgroundColor = "black";
+            })
     }
 }
 createGrids(16, 16)

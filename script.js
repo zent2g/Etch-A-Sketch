@@ -18,20 +18,14 @@ function createGrids(value){
         return Math.floor(Math.random() * max);
     }
     function cellChange(){
-<<<<<<< HEAD
-        let cellSize = (940 / value) + "px";
-        let cells = document.querySelectorAll(".cell");
         let rgb = document.querySelector("#rgb");
         rgb.addEventListener("click",() => {
             cells.forEach((cell) => cell.addEventListener("mouseover",() => {
                 cell.style.backgroundColor = `rgb(${getRandomColor(256)},${getRandomColor(256)},${getRandomColor(256)})`;
             }))
         })
-=======
         let cellSize = (940/value) + "px";
         let cells = document.querySelectorAll(".cell");
-            
->>>>>>> cfe132ce5dc95f092e6f5ef294bf39436c777ce5
         cells.forEach((cell) => {
             cell.style.width = cellSize;
             cell.style.height = cellSize;
@@ -49,29 +43,6 @@ createGrids()
 //clear the current cells (16x16) and then through the prompt add the new cells, is my logic sound. 
 //maximum of 100 for performance
 
-<<<<<<< HEAD
-=======
-function getRandomColor(max) {
-    return Math.floor(Math.random() * max);
-}
-    let cellSize = (940/value) + "px";
-    let cells = document.querySelectorAll(".cell");
-    let rgb = document.querySelector("#rgb");
-    rgb.addEventListener("click",() => {
-        cells.forEach((cell) => cell.addEventListener("mouseover",() => {
-            cell.style.backgroundColor = `rgb(${getRandomColor(256)},${getRandomColor(256)},${getRandomColor(256)})`;
-        }))
-    })
-        
-    cells.forEach((cell) => {
-        cell.style.width = cellSize;
-        cell.style.height = cellSize;
-        cell.addEventListener("mouseover", () => {
-            cell.style.backgroundColor = "black";
-        })
-    })
-
->>>>>>> cfe132ce5dc95f092e6f5ef294bf39436c777ce5
 resetButton.addEventListener('click', ()=> {
 });
 function resetGrid(){

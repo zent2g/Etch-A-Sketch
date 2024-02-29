@@ -35,6 +35,16 @@ function createGrids(value){
         })
     }
     cellChange()
+    function eraseCells(){
+        let eraseCells = document.querySelector(".eraseButton");
+        let cells = document.querySelectorAll('.cell')
+        eraseCells.addEventListener("click",() => {
+            cells.forEach((cell) => cell.addEventListener("mouseover",() => {
+                cell.style.backgroundColor = 'white';
+            }))
+        })
+    }
+    eraseCells();
 }
 createGrids()
 

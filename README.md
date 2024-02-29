@@ -16,6 +16,4 @@ Etch a Sketch project that will change colors when your mouse moves across it.
 For 1 thing and 1 thing only. Learning.
 
 ## Future Updates🔮
-1. finishing up the grid so it is, uniform.
-2. having the grids colored when you hover over them with the mouse.
-3. making a rainbow effect.
+- This project is done for the moment.
